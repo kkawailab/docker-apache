@@ -23,7 +23,7 @@
 - **タイムゾーン**: Asia/Tokyo
 - **公開ポート**: 80 (HTTP)
 
-Dockerfileの各コマンドの詳細については、[Dockerfileコマンド解説ガイド](./dockerfile-guide.md)を参照してください。
+Dockerfileの各コマンドの詳細については、[Dockerfileコマンド解説ガイド](./dockerfile-guide.md)を参照してください。また、本プロジェクトのDockerfileの詳細な行ごとの解説は[Dockerfile詳細解説](./dockerfile-detailed-explanation.md)をご覧ください。
 
 ## 前提条件
 
@@ -47,11 +47,12 @@ docker compose version
 
 ```
 docker-apache/
-├── Dockerfile          # Apache用のDockerfile
-├── index.html         # Webコンテンツ（要作成）
-├── README.md          # このファイル
-├── CLAUDE.md          # Claude Code用ガイド
-└── dockerfile-guide.md # Dockerfileコマンド解説
+├── Dockerfile                        # Apache用のDockerfile
+├── index.html                       # Webコンテンツ（要作成）
+├── README.md                        # このファイル
+├── CLAUDE.md                        # Claude Code用ガイド
+├── dockerfile-guide.md              # Dockerfileコマンド解説
+└── dockerfile-detailed-explanation.md # Dockerfile詳細解説
 ```
 
 ## セットアップ手順
@@ -330,7 +331,8 @@ docker exec my-apache df -h
 
 ## 参考リンク
 
-- [Dockerfileコマンド解説ガイド](./dockerfile-guide.md) - このプロジェクト内のDockerfileコマンド詳細解説
+- [Dockerfileコマンド解説ガイド](./dockerfile-guide.md) - Dockerfileコマンドの一般的な解説
+- [Dockerfile詳細解説](./dockerfile-detailed-explanation.md) - 本プロジェクトのDockerfile行ごとの詳細解説
 - [Docker公式ドキュメント](https://docs.docker.com/)
 - [Apache公式ドキュメント](https://httpd.apache.org/docs/2.4/)
 - [Dockerfile リファレンス](https://docs.docker.com/reference/dockerfile/)
